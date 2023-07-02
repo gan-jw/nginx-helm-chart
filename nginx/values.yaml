@@ -1,0 +1,12 @@
+replicaCount: 1
+
+image:
+  repository: nginx
+  pullPolicy: IfNotPresent
+
+service:
+  nodePort: 30011
+  port: 80
+  protocol: TCP
+  targetPort: 80
+  type: NodePort
